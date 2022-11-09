@@ -1,0 +1,6 @@
+def solution(numbers, num1, num2):
+    
+#배열을 자를 때엔 배열이름[시작 인덱스 : 자르기 위한 인덱스 + 1]을 해주면 된다.
+#왜냐하면 뒤에 인덱스는 포함하지 않기 때문에 뒤의 인덱스까지 자르고 싶을 땐 +1을 해서 그 다음 인덱스 까지 선택해준다    
+    result = numbers[num1:num2 + 1 ]
+    return result
