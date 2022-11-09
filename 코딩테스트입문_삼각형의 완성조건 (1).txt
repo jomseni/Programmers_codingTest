@@ -1,0 +1,10 @@
+def solution(sides):
+#     요소가 나타내는 수의 크기를 이용할 것 이므로 내림차순 정렬을 사용할 것
+    sides.sort(reverse = True) # 이렇게 작성하면 내림차순 정렬.
+    
+#     조건문을 만들어 가장 앞 인덱스의 값이 다른 두 인덱스의 값의 합 보다 작으면 return 1 , 아니면 return 2
+    if sides[0] < sides[1] + sides[2]:
+        return 1
+    else:
+        return 2
+    
