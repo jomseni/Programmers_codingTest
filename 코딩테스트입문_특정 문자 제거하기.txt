@@ -1,0 +1,23 @@
+def solution(my_string, letter):
+    array = []
+    for i in my_string:
+        if i != letter:
+            array.append(i)
+#   배열을 문자열로 만드는 ''.join(배열명)을 사용하여 문자열을 출력한다.
+    answer = ''.join(array)
+    return answer
+
+"""
+방법 2)
+def solution(my_string, letter):
+    answer = my_string.replace(letter, "")
+    return answer
+    
+방법 3)    
+def solution(my_string, letter):
+    answer = ''
+    for string in my_string:
+        if string != letter:
+            answer += string
+    return answer
+"""
