@@ -1,0 +1,24 @@
+def solution(s1, s2):
+#   배열 s1, s2를 집합으로 만들면 각 리스트에 있는 원소를 비교할 수 있다.
+#   배열 s1, s2를 집합으로 만들기
+    s1 = set(s1)
+    s2 = set(s2)
+    
+#   집합이 된 s1과 s2의 교집합을 통해 같은 원소를 구하고 그것을 answer에 대입 후 길이 계산  
+    answer = s1.intersection(s2)
+    return len(answer)
+
+
+"""
+
+방법 2 )
+
+def solution(s1, s2):
+    count = 0
+
+    for val in s1:
+        if val in s2:
+            count += 1
+    return count
+"""
+    
