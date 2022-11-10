@@ -1,0 +1,13 @@
+def solution(n):
+#     answer = 0 으로 서 answer을 정수로 선언
+    answer = 0
+#     숫자일 땐 토큰 단위로 쪼갤 수 없으므로 문자열로 바꿔준다.
+    N = str(n)
+    for num in N:
+#         문자와 숫자를 더하는 것은 안되므로 num을 다시 int를 사용해 정수로 바꿔준다.
+        answer += int(num)
+    return answer    
+        
+        
+#숫자의 경우 for num in n  불가능하다. 따라서 하나씩 쪼갤 수 없다. 문자열과 배열만 쪼갤 수 있다.
+        
