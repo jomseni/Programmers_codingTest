@@ -1,0 +1,8 @@
+def solution(n):
+#    숫자  n의 루트 표현 하기 =>  n ** 0.5
+    k = n ** 0.5
+    
+    if int(k) == k:
+        return 1
+    else:
+        return 2
